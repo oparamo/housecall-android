@@ -110,7 +110,7 @@ public class DeviceActivity extends ViewPagerActivity {
     // GUI
     mDeviceView = new DeviceView();
     mSectionsPagerAdapter.addSection(mDeviceView, "Services");
-    //mSectionsPagerAdapter.addSection(new HelpView("help_device.html", R.layout.fragment_help, R.id.webpage), "Help");
+    mSectionsPagerAdapter.addSection(new HelpView("help_device.html", R.layout.fragment_help, R.id.webpage), "Help");
     PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
 
     // BLE
